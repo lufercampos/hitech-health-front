@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Before testing you need to change the URL of the API where the application makes the requests:
+
+Go to the folder: ..\src\helpers\
+Open the file: Api.js
+Change the baseURL attribute: "http://<host>/<context>
+ 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
