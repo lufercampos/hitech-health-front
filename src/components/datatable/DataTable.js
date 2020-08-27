@@ -1113,22 +1113,26 @@ class DataTable extends Component {
                             </Tooltip>
 
                             {column.tipoPesquisa === TIPO_PESQUISA.string ? (
-                              <TextField
-                                InputProps={{
-                                  className: classes.inputTextPesquisa,
-                                }}
-                                autoComplete={"no"}
-                                defaultValue={column.defaultValue}
-                                key={column.id}
-                                fullWidth
-                                id={column.id}
-                                margin="none"
-                                onFocus={this.onFocus}
-                                onKeyDown={this.onEnterFilter(
-                                  column.tipoPesquisa
-                                )}
-                                onBlur={this.onBlurFilter(column.tipoPesquisa)}
-                              />
+                              <Tooltip title={"Search " + column.label}>
+                                <TextField
+                                  InputProps={{
+                                    className: classes.inputTextPesquisa,
+                                  }}
+                                  autoComplete={"no"}
+                                  defaultValue={column.defaultValue}
+                                  key={column.id}
+                                  fullWidth
+                                  id={column.id}
+                                  margin="none"
+                                  onFocus={this.onFocus}
+                                  onKeyDown={this.onEnterFilter(
+                                    column.tipoPesquisa
+                                  )}
+                                  onBlur={this.onBlurFilter(
+                                    column.tipoPesquisa
+                                  )}
+                                />
+                              </Tooltip>
                             ) : column.tipoPesquisa ===
                               TIPO_PESQUISA.numeric ? (
                               <TextField

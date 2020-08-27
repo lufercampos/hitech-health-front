@@ -6,18 +6,28 @@ import {
   getUserByToken,
   logout as _logout,
 } from "../../services/UserService";
+import { showAlert } from "./AppAction";
 
 export const authenticatesUser = (params) => async (dispatch) => {
   return new Promise((resolve, reject) => {
     login(params)
       .then((result) => {
-        sessionStorage.setItem("token", result.data.token);
-
         if (result.data.token == 0) {
-          return reject(
-            "This email needs to be confirmed. Check your email box to confirm it."
+          dispatch(
+            showAlert({
+              message:
+                "This email needs to be confirmed. Check your email box to confirm it.",
+              options: {
+                variant: "warning",
+                anchorOrigin: { vertical: "top", horizontal: "center" },
+              },
+            })
           );
+
+          return reject();
         }
+
+        sessionStorage.setItem("token", result.data.token);
 
         getUserByToken()
           .then((result) => {

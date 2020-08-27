@@ -128,7 +128,9 @@ let errorFunction = (error) => {
       }
     }
 
-    result.status = error.response.status;
+    if (error.response && error.response.status) {
+      result.status = error.response.status;
+    }
 
     if (result.status != 403) {
       store.dispatch(
