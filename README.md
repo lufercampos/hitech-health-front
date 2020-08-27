@@ -5,10 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Go to the folder: ..\src\helpers\
 Open the file: Api.js
-Change the baseURL attribute: http:// <HOST>/ <CONTEXT>
+Change the baseURL attribute: http:// HOST:PORT/ CONTEXT
  
+**If you run the API locally on a Tomcat server on port 8080 your URL should be this:
+http://127.0.0.1:8080/hitech-health-api/
 
 
+After that, run the scripts below as you wish.
 
 ## Available Scripts
 
