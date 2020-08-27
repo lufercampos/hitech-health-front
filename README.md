@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Go to the folder: ..\src\helpers\
 Open the file: Api.js
-Change the baseURL attribute: "http://HOST/CONTEXT
+Change the baseURL attribute: http:// <HOST>/ <CONTEXT>
  
 
 
