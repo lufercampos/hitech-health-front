@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Demo version available on AWS: [Demo](http://elasticbeanstalk-eu-west-1-100101151868.s3-website-eu-west-1.amazonaws.com)
 
 ## Before testing you need to change the URL of the API where the application makes the requests:
 
@@ -12,6 +13,7 @@ http://127.0.0.1:8080/hitech-health-api/
 
 
 After that, run the scripts below as you wish.
+**To run the scripts below you need to have a version of Node.js equal to v12.16.1 or higher.
 
 ## Available Scripts
 
