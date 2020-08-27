@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Demo version available on AWS: [Demo](http://elasticbeanstalk-eu-west-1-100101151868.s3-website-eu-west-1.amazonaws.com)
 
+Admin access:
+
+Email: admin@hitech-health.com
+Password: admin
+
 ## Before testing you need to change the URL of the API where the application makes the requests:
 
 Go to the folder: ..\src\helpers\
